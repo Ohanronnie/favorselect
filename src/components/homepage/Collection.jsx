@@ -4,6 +4,17 @@ import { FaHeart } from "react-icons/fa";
 import { IoMdFlame } from "react-icons/io";
 import { MdOutlineStarPurple500 } from "react-icons/md";
 import ProductCard from "../layout/ProductCard";
+import Bag from "../../assets/Bag.png";
+
+import { Swiper, SwiperSlide } from "swiper/react";
+
+// import required modules
+import { Autoplay, Pagination, Navigation } from "swiper/modules";
+
+// Import Swiper styles
+import "swiper/css";
+import Shoe from "../../assets/Shoe.png";
+
 const Collection = () => {
   const posts = [
     {
@@ -151,12 +162,36 @@ const Collection = () => {
       review: "4.5",
     },
   ];
-  return (
-    <div className="px-12 py-12">
-      <h1 className="font-serif font-extrabold text-2xl pb-4">
-        Entire Collection
+  return ( 
+    <div className="px-6 py-12">
+      <div className="mb-14">
+       <Swiper
+        spaceBetween={50}
+        slidesPerView={1}
+        navigation={false}
+        modules={[Autoplay, Pagination, Navigation]}
+        autoplay={{
+          delay: 2500,
+          disableOnInteraction: false,
+        }}
+      >
+        <SwiperSlide>
+          <div className="bg-blue-300 relative w-full p-8 rounded-lg flex flex-row justify-between items-center">
+            <div className="space-y-4">
+              <h1 className="text-5xl  font-extrabold w-[70%]">
+                The best Deals from across the globe
+              </h1>
+              <p>Flash Sales</p>
+            </div>
+            <img src={Bag} className="h-[450px] w-[700px]" />
+          </div>
+        </SwiperSlide>
+        </Swiper>
+        </div>
+      <h1 className=" font-medium text-2xl pb-4">
+        Our Top Picks Just For You
       </h1>
-      <ul className="grid gap-x-4 gap-y-10  sm:grid-cols-2 lg:grid-cols-6">
+      <ul className="grid gap-x-4 gap-y-10  sm:grid-cols-3 lg:grid-cols-6">
         {posts.map((items, key) => (
       <ProductCard Price={items.Price} href={items.img} img={items.img} desc={items.desc} review={ items.review}/>
       

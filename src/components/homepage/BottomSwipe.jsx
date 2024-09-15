@@ -1,5 +1,6 @@
-import React from "react";
-import { Swiper, SwiperSlide } from "swiper/react";
+import React from 'react'
+import { Swiper, SwiperSlide } from 'swiper/react'
+
 import "swiper/css";
 import "swiper/css/free-mode";
 import "swiper/css/pagination";
@@ -12,17 +13,15 @@ import Shades from "../../assets/Shades.png";
 
 import Flop from "../../assets/Flop.png";
 import Boxers from "../../assets/Boxers.png";
+import { Autoplay, Pagination, Navigation, FreeMode } from "swiper/modules";
 
-import { FreeMode, Pagination, Navigation } from "swiper/modules"; // Import Navigation
-import ProductCard from "../layout/ProductCard";
-
-export default function Promotions() {
+function BottomSwipe() {
   return (
-    <div className="lg:p-12 p-4 relative">
-      <h1 className=" font-medium text-2xl pb-4">
-        Weekly Promotions
-      </h1>
-      <Swiper
+    <div  className="lg:p-12 p-4 relative mb-16">
+    <h1 className=" font-medium text-2xl pb-4">
+      Explore the country
+    </h1>
+ <Swiper
         spaceBetween={30}
         freeMode={true}
         pagination={{
@@ -78,7 +77,8 @@ export default function Promotions() {
         </SwiperSlide>
       </Swiper>
 
-      {/* Custom Navigation Buttons */}
     </div>
-  );
+  )
 }
+
+export default BottomSwipe

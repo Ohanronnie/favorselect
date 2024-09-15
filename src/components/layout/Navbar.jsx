@@ -37,14 +37,12 @@ const Navbar = () => {
           <input
             type="email"
             placeholder="Search products"
-            className="w-full rounded-2xl p-2.5 outline-none bg-gray-100"
+            className="w-full rounded-md bg-red-500 bg-opacity-25 placeholder:text-red-400  p-2.5 outline-none"
           />
-          <span className="h-10 w-10 px-2 flex items-center justify-center">
-          <FaSearch />
-          </span>
-         {/* <button className="p-2.5 rounded-md text-white bg-red-500 outline-none shadow-md focus:shadow-none sm:px-5">
+         
+       <button className="p-2.5 rounded-md text-white bg-red-500 outline-none shadow-md focus:shadow-none sm:px-5">
             Search
-          </button>*/}
+          </button>
         </div>
 
         <div className="flex flex-row items-center lg:gap-8 gap-4 text-gray-700">

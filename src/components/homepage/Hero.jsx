@@ -14,7 +14,7 @@ const Hero = () => {
   return (
     <div className="lg:px-12 space-y-6 mx-4 mt-4">
       <div className="bg-indigo-600 hidden rounded-xl mx-4">
-        <div className="mx-auto px-4 py-3 items-center justify-between text-white sm:flex md:px-8">
+        <div className="mx-auto   px-4 py-3 items-center justify-between text-white sm:flex md:px-8">
           <div className="flex gap-x-4">
             <div className="w-10 h-10 flex-none rounded-lg bg-indigo-800 flex items-center justify-center">
               <svg

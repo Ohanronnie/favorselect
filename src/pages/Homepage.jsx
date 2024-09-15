@@ -4,15 +4,17 @@ import BestDeals from "../components/homepage/BestDeals";
 import Promotions from "../components/homepage/Promotions";
 import Popular from "../components/homepage/Popular";
 import Collection from "../components/homepage/Collection";
+import BottomSwipe from "../components/homepage/BottomSwipe";
 
 const Homepage = () => {
   return (
     <div>
-    {/*<Hero />*/}
+    <Hero />
    <BestDeals />
      <Promotions />
-    {/*  <Popular />*/}
+      <Popular />
       <Collection />
+      <BottomSwipe/>
     </div>
   );
 };
