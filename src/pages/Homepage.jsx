@@ -8,10 +8,10 @@ import Collection from "../components/homepage/Collection";
 const Homepage = () => {
   return (
     <div>
-      <Hero />
-      <BestDeals />
-      <Promotions />
-      <Popular />
+    {/*<Hero />*/}
+   <BestDeals />
+     <Promotions />
+    {/*  <Popular />*/}
       <Collection />
     </div>
   );

@@ -14,10 +14,11 @@ import Flop from "../../assets/Flop.png";
 import Boxers from "../../assets/Boxers.png";
 
 import { FreeMode, Pagination, Navigation } from "swiper/modules"; // Import Navigation
+import ProductCard from "../layout/ProductCard";
 
 export default function Promotions() {
   return (
-    <div className="lg:p-12 p-4 relative">
+    <div className="lg:p-12 hidden p-4 relative">
       <h1 className="font-serif font-extrabold text-2xl pb-4">
         Weekly Promotions
       </h1>

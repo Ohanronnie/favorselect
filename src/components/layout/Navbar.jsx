@@ -7,6 +7,8 @@ import { FiUser } from "react-icons/fi";
 import { GrCart } from "react-icons/gr";
 import { AiOutlineWarning } from "react-icons/ai";
 import Notification from "./Notification";
+import { FaSearch } from "react-icons/fa";
+
 import { Link } from "react-router-dom";
 import ProfileMenu from "./ProfileMenu";
 
@@ -30,15 +32,19 @@ const Navbar = () => {
           <img src={Logo} className=" lg:h-24 h-12 lg:w-56 w-28 rounded-lg " />
         </Link>
 
-        <div className="w-[50%] items-center rounded-md p-1 bg-gray-200 lg:flex hidden">
+        <div className="w-[50%] items-center rounded-2xl mx-4 bg-gray-100 flex">
+
           <input
             type="email"
-            placeholder="What are you looking for?"
-            className="w-full p-2.5 outline-none bg-gray-100"
+            placeholder="Search products"
+            className="w-full rounded-2xl p-2.5 outline-none bg-gray-100"
           />
-          <button className="p-2.5 rounded-md text-white bg-red-500 outline-none shadow-md focus:shadow-none sm:px-5">
+          <span className="h-10 w-10 px-2 flex items-center justify-center">
+          <FaSearch />
+          </span>
+         {/* <button className="p-2.5 rounded-md text-white bg-red-500 outline-none shadow-md focus:shadow-none sm:px-5">
             Search
-          </button>
+          </button>*/}
         </div>
 
         <div className="flex flex-row items-center lg:gap-8 gap-4 text-gray-700">
@@ -60,14 +66,14 @@ const Navbar = () => {
             <FiUser className="text-2xl" />
             <p className="text-xs lg:block hidden">Profile</p>
           </div>
-          {isProfileVisible && <ProfileMenu />}
+          {isProfileVisible && <ProfileMenu />}{/*
           <Link
             to="/MyOrders"
             className=" flex flex-col items-center justify-center gap-2"
           >
             <CgBox className="text-2xl" />
             <p className="text-xs lg:block hidden">My orders</p>
-          </Link>
+          </Link>*/}
           <Link
             to="/ShoppingCart"
             className=" flex flex-col items-center justify-center gap-2"

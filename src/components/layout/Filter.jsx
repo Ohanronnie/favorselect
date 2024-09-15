@@ -12,7 +12,7 @@ const Filter = () => {
     { name: "Electronics", logo: Shop },
     { name: "Smartphone Cases", logo: Shop },
     { name: "Home Appliances", logo: Shop },
-    { name: "Outdoors & Garden", logo: Shop },
+    { name: "Outdoors & Garden", logo: Shop },/*
     {
       name: "Cars and Motorcycles",
       logo: Shop,
@@ -25,7 +25,7 @@ const Filter = () => {
     {
       name: "Hobbies & Creativity",
       logo: Shop,
-    },
+    },*/
   ];
 
   const [isMenuOpen, setMenuOpen] = useState(false);
@@ -36,17 +36,19 @@ const Filter = () => {
   return (
     <div className="p-4">
       <div className="flex flex-wrap gap-4 justify-center">
-        <div
-          className="flex flex-row items-center text-red-500 gap-2 cursor-pointer"
+      {/*}  <div
+          className="flex flex-row items-center text-indigo-600 gap-2 cursor-pointer"
           onClick={toggleMenu}
         >
           <CiMenuBurger /> All Categories
-        </div>
+        </div>*/}
         <Link to="/Categories">Outlet</Link>
         <Link to="/Categories">Kids</Link>
         <Link to="/Categories">Home and Kitchen</Link>
         <Link to="/Categories">Electronics</Link> <Link>Smartphone Cases</Link>{" "}
         <Link>Home Appliances</Link>
+        
+        {/*
         <Link to="/Categories">Outdoors & Garden</Link>
         <Link to="/Categories">Cars and Motorcycles</Link>
         <Link to="/Categories">Home and Kitchen</Link>
@@ -55,8 +57,10 @@ const Filter = () => {
         <Link to="/Categories">Shoes</Link>
         <Link to="/Categories">Mens Fashion</Link>
         <Link to="/Categories">Bags & Suitcase</Link>
-        <Link to="/Categories">Hobbies & Creativity </Link>
+        <Link to="/Categories">Hobbies & Creativity </Link>*/}
       </div>
+      
+       
       {isMenuOpen && (
         <div className="mt-4 p-4 bg-white shadow-lg rounded-lg">
           <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">

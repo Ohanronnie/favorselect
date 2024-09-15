@@ -3,7 +3,7 @@ import { CiHeart } from "react-icons/ci";
 import { IoMdFlame } from "react-icons/io";
 import { MdOutlineStarPurple500 } from "react-icons/md";
 import Suit from "../../assets/Suit.png";
-
+import ProductCard from "../layout/ProductCard";
 const Popular = () => {
   const posts = [
     {
@@ -83,41 +83,8 @@ const Popular = () => {
         </h1>
         <div className="grid lg:grid-cols-4 grid-cols-2 gap-4">
           {posts.map((items, key) => (
-            <div className="w-full mx-auto group sm:max-w-sm" key={key}>
-              <a href={items.href} className="cursor-pointer">
-                <div className="relative">
-                  <img
-                    src={items.img}
-                    loading="lazy"
-                    alt={items.Price}
-                    className="w-full rounded-lg"
-                  />
-                  <div className="absolute p-2 rounded-full bg-gray-100 top-1 right-1">
-                    <CiHeart />
-                  </div>
-                </div>
-                <div className="mt-3 space-y-2">
-                  <span className="block text-red-600 text-sm">
-                    {items.date}
-                  </span>
-                  <h3 className="text-lg text-red-600 duration-150 group-hover:text-red-400 font-semibold">
-                    {items.Price}
-                  </h3>
-                  <p className="text-gray-600 text-sm duration-150 group-hover:text-gray-800">
-                    {items.desc}
-                  </p>
-                  <div className="flex flex-row items-center gap-3">
-                    <div className="flex flex-row items-center gap-2 rounded-full p-1.5 bg-gray-100 text-xs">
-                      <IoMdFlame className="text-red-500" /> Best Seller
-                    </div>
-                    <div className="flex flex-row items-center gap-2 rounded-full p-1.5 bg-gray-100 text-xs">
-                      <MdOutlineStarPurple500 className="text-red-500" />{" "}
-                      {items.review}
-                    </div>
-                  </div>
-                </div>
-              </a>
-            </div>
+   <ProductCard Price={items.Price} href={items.img} img={items.img} desc={items.desc} review={ items.review}/>
+      
           ))}
         </div>
       </div>

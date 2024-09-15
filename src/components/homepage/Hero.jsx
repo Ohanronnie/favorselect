@@ -12,8 +12,8 @@ import Shoe from "../../assets/Shoe.png";
 
 const Hero = () => {
   return (
-    <div className="lg:px-12 space-y-6">
-      <div className="bg-indigo-600 rounded-xl">
+    <div className="lg:px-12 space-y-6 mx-4 mt-4">
+      <div className="bg-indigo-600 hidden rounded-xl mx-4">
         <div className="mx-auto px-4 py-3 items-center justify-between text-white sm:flex md:px-8">
           <div className="flex gap-x-4">
             <div className="w-10 h-10 flex-none rounded-lg bg-indigo-800 flex items-center justify-center">
@@ -34,12 +34,12 @@ const Hero = () => {
             </div>
             <p className="py-2 font-medium">Top deals are back again</p>
           </div>
-          <a
+         {/* <a
             href="javascript:void(0)"
             className="inline-block w-full mt-3 py-2 px-3 text-center text-indigo-600 font-medium bg-white duration-150 hover:bg-gray-100 active:bg-gray-200 rounded-lg sm:w-auto sm:mt-0 sm:text-sm"
           >
             Learn more
-          </a>
+          </a>*/}
         </div>
       </div>
       <Swiper
@@ -67,7 +67,7 @@ const Hero = () => {
           <div className="bg-black relative w-full p-8 rounded-lg flex flex-row justify-between items-center">
             <div className="space-y-4 text-white">
               <h1 className="text-5xl font-extrabold w-[70%] ">
-                The best Deals from across the globe
+                The best Deals from across the glob
               </h1>
               <p>Flash Sales</p>
             </div>

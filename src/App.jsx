@@ -24,7 +24,9 @@ function App() {
   return (
     <>
       <Navbar />
+      <hr />
       <Filter />
+      <hr />
       <Routes>
         <Route path="/" element={<Homepage />} />
         <Route path="/Login" element={<Login />} />

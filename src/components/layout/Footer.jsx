@@ -4,7 +4,7 @@ import Logo from "../../assets/Logo2.jpeg";
 const Footer = () => {
   return (
     <footer class="bg-white">
-      <div class="bg-red-500 py-6">
+      {/*<div class="bg-red-500 py-6">
         <div class="mx-auto max-w-screen-2xl px-4 md:px-8">
           <div class="flex flex-col items-center justify-between gap-2 md:flex-row">
             <div class="mb-3 text-center md:mb-0 md:text-left">
@@ -26,7 +26,7 @@ const Footer = () => {
             </form>
           </div>
         </div>
-      </div>
+      </div>*/}
 
       <div class="pt-12 lg:pt-16 bg-black">
         <div class="mx-auto max-w-screen-2xl px-4 md:px-8 text-white">
